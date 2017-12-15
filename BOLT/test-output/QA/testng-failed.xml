@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [QA]">
+  <test name="project1(failed)">
+    <classes>
+      <class name="pack11.login">
+        <methods>
+          <include name="f"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- pack11.login -->
+    </classes>
+  </test> <!-- project1(failed) -->
+</suite> <!-- Failed suite [QA] -->
