@@ -23,10 +23,10 @@ public class login {
   }
   @BeforeMethod
   public void beforeMethod() {
-	/* System.setProperty("webdriver.chrome.driver","G://chromedriver.exe");
-	 driver=new ChromeDriver();*/
-	 System.setProperty("webdriver.gecko.driver","G://geckodriver.exe");
-	 driver=new FirefoxDriver();
+	 System.setProperty("webdriver.chrome.driver","G://chromedriver.exe");
+	 driver=new ChromeDriver();
+	/* System.setProperty("webdriver.gecko.driver","G://geckodriver.exe");
+	 driver=new FirefoxDriver();*/
 	 driver.get("http://stage.trioblumenlab.com/");
 	 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	 }
