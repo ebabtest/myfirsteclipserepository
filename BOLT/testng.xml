@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="example suite 1" verbose="1" >
   <test name="Regression suite" >
+  <parameter name="sOrgname" value="reportsts"/>
+  <parameter name="sUsername" value="swagatika"/>
+  <parameter name="sPassword" value="Tecnics@123"/>
     <classes>
       <class name="pack11.login"/>
      </classes>

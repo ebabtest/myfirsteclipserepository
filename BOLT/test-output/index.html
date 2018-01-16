@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-example_suite_1">
-              <span class="suite-name border-skipped">example suite 1</span>
+              <span class="suite-name border-passed">example suite 1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-example_suite_1">
-                    <span>C:\Users\sharma.n\workspace_TestNG\BOLT\testng.xml</span>
+                    <span>C:\Users\sharma.n\git\BOLT\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-example_suite_1" class="hide-methods skipped suite-example_suite_1"> (hide)</a> <!-- hide-methods skipped suite-example_suite_1 -->
-                      <a href="#" panel-name="suite-example_suite_1" class="show-methods skipped suite-example_suite_1"> (show)</a> <!-- show-methods skipped suite-example_suite_1 -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-example_suite_1" class="hide-methods passed suite-example_suite_1"> (hide)</a> <!-- hide-methods passed suite-example_suite_1 -->
+                      <a href="#" panel-name="suite-example_suite_1" class="show-methods passed suite-example_suite_1"> (show)</a> <!-- show-methods passed suite-example_suite_1 -->
                     </span>
-                    <div class="method-list-content skipped suite-example_suite_1">
+                    <div class="method-list-content passed suite-example_suite_1">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="pack11.login" hash-for-method="f">f</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-example_suite_1" title="pack11.login" hash-for-method="f(reportsts, swagatika, Tecnics@123)">f(reportsts, swagatika, Tecnics@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-example_suite_1 -->
+                    </div> <!-- method-list-content passed suite-example_suite_1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,41 +117,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-example_suite_1" class="panel example_suite_1">
-          <div class="suite-example_suite_1-class-skipped">
+          <div class="suite-example_suite_1-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">pack11.login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="f">
-                  </a> <!-- f -->
+                  <a name="f(reportsts, swagatika, Tecnics@123)">
+                  </a> <!-- f(reportsts, swagatika, Tecnics@123) -->
                   <span class="method-name">f</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: timeouts
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;SHARMA-PC&apos;, ip: &apos;169.254.123.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\sharma.n\AppData\Local\Temp\rust_mozprofile.sEP2ujZiEcYo, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=57.0, platformVersion=10.0, moz:processID=10380.0, browserName=firefox, javascriptEnabled=true, platformName=windows_nt, moz:webdriverClick=false}]
-Session ID: 4de24d8e-a56a-4b1f-84cc-287e3d073030
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:868)
-	at pack11.login.beforeMethod(login.java:31)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(reportsts, swagatika, Tecnics@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-example_suite_1-class-skipped -->
+          </div> <!-- suite-example_suite_1-class-passed -->
         </div> <!-- panel example_suite_1 -->
         <div panel-name="test-xml-example_suite_1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sharma.n\workspace_TestNG\BOLT\testng.xml</span>
+            <span class="header-content">C:\Users\sharma.n\git\BOLT\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,6 +144,9 @@ Session ID: 4de24d8e-a56a-4b1f-84cc-287e3d073030
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;example suite 1&quot;&gt;
   &lt;test name=&quot;Regression suite&quot;&gt;
+    &lt;parameter name=&quot;sOrgname&quot; value=&quot;reportsts&quot;/&gt;
+    &lt;parameter name=&quot;sUsername&quot; value=&quot;swagatika&quot;/&gt;
+    &lt;parameter name=&quot;sPassword&quot; value=&quot;Tecnics@123&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;pack11.login&quot;/&gt;
     &lt;/classes&gt;
@@ -204,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'f')
 data.setCell(0, 2, 'pack11.login')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 5275);
 window.suiteTableData['example_suite_1']= { tableData: data, tableDiv: 'times-div-example_suite_1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-example_suite_1">
               </div> <!-- times-div-example_suite_1 -->
             </div> <!-- times-div -->
@@ -237,11 +225,17 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">pack11.login</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">f(reportsts, swagatika, Tecnics@123)</span>
+                <span class="method-start">9258 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">14535 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.server.handler.ImplicitlyWait;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -14,10 +15,11 @@ import org.testng.annotations.AfterMethod;
 public class login {
 	WebDriver driver;
   @Test
-  public void f() throws InterruptedException {
-	 driver.findElement(By.id("txtOrgCode")).sendKeys("reportsts");
-	 driver.findElement(By.id("txtUName")).sendKeys("swagatika");
-	 driver.findElement(By.id("txtUpass")).sendKeys("Tecnics@123");
+  @Parameters({ "sOrgname","sUsername", "sPassword" })
+  public void f(String sOrgname,String sUsername,String sPassword) throws InterruptedException {
+	 driver.findElement(By.id("txtOrgCode")).sendKeys(sOrgname);
+	 driver.findElement(By.id("txtUName")).sendKeys(sUsername);
+	 driver.findElement(By.id("txtUpass")).sendKeys(sPassword);
 	 driver.findElement(By.xpath("//button[@id='Submit']")).click();
 	  Thread.sleep(2000);
   }
@@ -28,7 +30,7 @@ public class login {
 	/* System.setProperty("webdriver.gecko.driver","G://geckodriver.exe");
 	 driver=new FirefoxDriver();*/
 	 driver.get("http://stage.trioblumenlab.com/");
-	 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	 }
 
   @AfterMethod
