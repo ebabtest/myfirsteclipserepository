@@ -21,7 +21,7 @@ public class login {
 	 driver.findElement(By.id("txtUName")).sendKeys(sUsername);
 	 driver.findElement(By.id("txtUpass")).sendKeys(sPassword);
 	 driver.findElement(By.xpath("//button[@id='Submit']")).click();
-	  Thread.sleep(2000);
+	 Thread.sleep(2000);
   }
   @BeforeMethod
   public void beforeMethod() {
@@ -30,7 +30,7 @@ public class login {
 	/* System.setProperty("webdriver.gecko.driver","G://geckodriver.exe");
 	 driver=new FirefoxDriver();*/
 	 driver.get("http://stage.trioblumenlab.com/");
-	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	 }
 
   @AfterMethod
